@@ -21,4 +21,16 @@ public class Customer {
 
     @Column(nullable = false, length = 100)
     private String name;
+
+    @Column(nullable = false, length = 100)
+    private String surname;
+
+    @Column(nullable = false)
+    private Integer numberOfPurchases;
+
+    public Customer(String name, String surname, Integer numberOfPurchases) {
+        this.name = name;
+        this.surname = surname;
+        this.numberOfPurchases = numberOfPurchases;
+    }
 }
